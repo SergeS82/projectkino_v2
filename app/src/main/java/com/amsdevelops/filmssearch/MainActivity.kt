@@ -16,8 +16,7 @@ class MainActivity : AppCompatActivity() {
         //Зупускаем фрагмент при старте
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.fragment_placeholder, HomeFragment())
-            .addToBackStack(null)
+            .replace(R.id.fragment_placeholder, SplashScreen())
             .commit()
 
     }
